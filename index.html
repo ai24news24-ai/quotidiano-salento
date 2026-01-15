@@ -1,29 +1,58 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Il Quotidiano del Salento</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-  <header>
-    <h1>Il Quotidiano del Salento</h1>
-    <div class="meta">Ultime notizie dal territorio</div>
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <h1>Il Quotidiano del Salento</h1>
+      <div class="tag">Ultime notizie dal territorio</div>
+    </div>
     <nav>
-      <a href="./index.html">Home</a>
+      <a class="active" href="./index.html">Home</a>
       <a href="./notizie/prima-notizia.html">Prima notizia</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <h2>Ultime notizie</h2>
+<main>
+  <div class="grid">
+    <section>
+      <div class="section-title">In evidenza</div>
 
-    <article class="card">
-      <h3><a href="./notizie/prima-notizia.html">Prima notizia di prova</a></h3>
-      <div class="meta">15 gennaio 2026 • Cronaca</div>
-      <p>Questo è il primo articolo. Da qui poi mettiamo categorie e lista automatica.</p>
-    </article>
-  </main>
-</body>
-</html>
+      <article class="lead">
+        <span class="badge">Cronaca</span>
+        <h2><a href="./notizie/prima-notizia.html">Prima notizia di prova</a></h2>
+        <div class="meta">15 gennaio 2026 • Redazione</div>
+        <div class="cards">
+          <div class="card">
+            <h3><a href="./notizie/prima-notizia.html">Aggiornamenti e dettagli</a></h3>
+            <div class="meta">Breve descrizione di supporto (poi la rendiamo automatica).</div>
+          </div>
+        </div>
+      </article>
+
+      <div style="height:14px"></div>
+      <div class="section-title">Ultime notizie</div>
+
+      <div class="cards">
+        <article class="card">
+          <h3><a href="./notizie/prima-notizia.html">Prima notizia di prova</a></h3>
+          <div class="meta">15 gennaio 2026 • Cronaca</div>
+          <p>Questo è il primo articolo. Da qui poi mettiamo categorie e lista automatica.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Sezioni</h3>
+      <div class="meta">Cronaca • Politica • Cultura • Sport</div>
+      <hr class="sep">
+      <h3>Newsletter</h3>
+      <div class="meta">Arriva presto. (Intanto mettiamo il form.)</div>
+      <hr class="sep">
+      <h3>Info</h3>
+      <div class="meta">Direttore responsabile: …</div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  © Il Quotidiano del Salento — Tutti i diritti riservati
+</footer>
