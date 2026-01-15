@@ -13,8 +13,29 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Categoria", name: "category", widget: "select", options: ["Cronaca","Politica","Cultura","Sport","Economia"] }
-      - { label: "Immagine", name: "image", widget: "image", required: false }
-      - { label: "Testo", name: "body", widget: "markdown" }
+      - label: "Titolo"
+        name: "title"
+        widget: "string"
+
+      - label: "Data"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Categoria"
+        name: "category"
+        widget: "select"
+        options:
+          - Cronaca
+          - Politica
+          - Cultura
+          - Sport
+          - Economia
+
+      - label: "Immagine"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Testo"
+        name: "body"
+        widget: "markdown"
