@@ -2,10 +2,6 @@ backend:
   name: github
   repo: ai24news24-ai/sito-decap-cms
   branch: main
-  base_url: https://decap-oauth-zscr.onrender.com
-  auth_endpoint: auth
-
-publish_mode: editorial_workflow
 
 media_folder: "uploads"
 public_folder: "/uploads"
@@ -19,5 +15,4 @@ collections:
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Immagine", name: "image", widget: "image", required: false }
       - { label: "Testo", name: "body", widget: "markdown" }
