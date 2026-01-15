@@ -214,3 +214,7 @@ footer{
   color: white;
   border-color: transparent;
 }
+
+.hero{ position: relative; }
+.hero-overlay{ position:absolute; left:18px; right:18px; bottom:18px; color:#fff; }
+.hero-overlay h2{ margin:8px 0 0; text-shadow:0 2px 12px rgba(0,0,0,.5); }
