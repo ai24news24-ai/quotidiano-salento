@@ -10,6 +10,7 @@
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+
 body{
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   background: var(--bg);
@@ -19,6 +20,26 @@ body{
 
 a{color:inherit;text-decoration:none}
 a:hover{text-decoration:underline}
+
+.topbar{
+  background: var(--accent);
+  color: white;
+}
+
+.topbar-inner{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 8px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-size: 13px;
+  letter-spacing: .04em;
+}
+
+.topbar a{ color:white; text-decoration:none; }
+.topbar a:hover{ text-decoration:underline; }
 
 header{
   background: var(--paper);
@@ -120,17 +141,12 @@ main{
   font-size: 13px;
 }
 
-.cards{
-  margin-top: 14px;
-  display:grid;
-  gap: 12px;
-}
-
 .card{
   background: var(--paper);
   border:1px solid var(--line);
   border-radius: 14px;
   padding: 14px 16px;
+  margin-top: 12px;
 }
 
 .card h3{
@@ -138,8 +154,6 @@ main{
   font-size: 22px;
   line-height: 1.2;
 }
-
-.card p{margin:10px 0 0}
 
 .badge{
   display:inline-block;
@@ -159,17 +173,6 @@ main{
   height: fit-content;
 }
 
-.sidebar h3{
-  margin:0 0 10px;
-  font-size: 18px;
-}
-
-hr.sep{
-  border:none;
-  border-top:1px solid var(--line);
-  margin: 14px 0;
-}
-
 footer{
   max-width: var(--max);
   margin: 0 auto;
@@ -178,23 +181,3 @@ footer{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   font-size: 13px;
 }
-
-.topbar{
-  background: var(--accent);
-  color: white;
-}
-
-.topbar-inner{
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 8px 18px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-  font-size: 13px;
-  letter-spacing: .04em;
-}
-
-.topbar a{ color:white; text-decoration:none; }
-.topbar a:hover{ text-decoration:underline; }
