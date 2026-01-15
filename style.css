@@ -190,3 +190,27 @@ footer{
   margin:12px 0 10px;
   border:1px solid var(--line);
 }
+.hero{
+  position: relative;
+}
+
+.hero-overlay{
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  right: 18px;
+  color: white;
+}
+
+.hero-overlay h2{
+  margin: 8px 0 0;
+  font-size: 36px;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(0,0,0,.5);
+}
+
+.hero .badge{
+  background: rgba(0,0,0,.6);
+  color: white;
+  border-color: transparent;
+}
