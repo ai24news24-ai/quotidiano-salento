@@ -3,39 +3,18 @@ backend:
   repo: ai24news24-ai/quotidiano-salento
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
   - name: "notizie"
     label: "Notizie"
-    folder: "content/notizie"
+    folder: "notizie"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - label: "Titolo"
-        name: "title"
-        widget: "string"
-
-      - label: "Data"
-        name: "date"
-        widget: "datetime"
-
-      - label: "Categoria"
-        name: "category"
-        widget: "select"
-        options:
-          - Cronaca
-          - Politica
-          - Cultura
-          - Sport
-          - Economia
-
-      - label: "Immagine"
-        name: "image"
-        widget: "image"
-        required: false
-
-      - label: "Testo"
-        name: "body"
-        widget: "markdown"
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Immagine", name: "image", widget: "image", required: false }
+      - { label: "Testo", name: "body", widget: "markdown" }
